@@ -24,8 +24,8 @@ const PlayerCard = (props) => {
             onClick={togglePlayer}
         >
             <h1>{name}</h1>
-            <p>{country}</p>
-            <span>{searches}</span>
+            <p>Country: {country}</p>
+            <span>Searches: {searches}</span>
         </div>
     )
 

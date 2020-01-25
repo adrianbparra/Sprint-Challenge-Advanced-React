@@ -31,14 +31,13 @@ class Players extends React.Component {
     }
 
     render() {
-        console.log(this.state)
         return(
             <div >
                 <h1>Select Your Favorite Players</h1>
                 <div className="player-container">
                 
                     {this.state.players.length > 1 && this.state.players.map( (player) => {
-                        return <PlayerCard player={player}/>
+                        return <PlayerCard key={player.id} player={player}/>
                     })}
                     
                 </div>
