@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import Player from "./components/Players.js";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App" data-test="App-component">
+
+      <Player />
     </div>
   );
 }
